@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewFXML.LoginController">
+   <children>
+      <Button fx:id="login" layoutX="143.0" layoutY="444.0" mnemonicParsing="false" onAction="#loginHandel" style="-fx-background-color: #EBB736;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="passField" layoutX="82.0" layoutY="373.0" />
+      <Label layoutX="134.0" layoutY="263.0" text="User Name">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userField" layoutX="82.0" layoutY="295.0" onAction="#userFieldHandel" />
+      <ImageView fitHeight="175.0" fitWidth="187.0" layoutX="89.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../build/classes/css/icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="139.0" layoutY="337.0" text="Password">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="Incorrect" layoutX="62.0" layoutY="499.0" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
